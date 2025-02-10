@@ -1,0 +1,53 @@
+{
+	"name": "wx-svelte-tasklist",
+	"version": "2.0.1",
+	"description": "Simple Svelte component for adding a task list section on a page",
+	"productTag": "tasklist",
+	"productTrial": false,
+	"type": "module",
+	"scripts": {
+		"build": "vite build",
+		"build:dist": "vite build --mode dist",
+		"build:tests": "vite build --mode test",
+		"lint": "yarn eslint ./demos ./src",
+		"start": "vite --open",
+		"start:tests": "vite --open=/tests/ --host 0.0.0.0  --port 5100 --mode test",
+		"test": "true",
+		"test:cypress": "cypress run -P ./ --config \"baseUrl=http://localhost:5100/tests\""
+	},
+	"svelte": "src/index.js",
+	"exports": {
+		".": {
+			"svelte": "./src/index.js"
+		},
+		"./package.json": "./package.json"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/svar-widgets/tasklist.git"
+	},
+	"bugs": {
+		"url": "https://forum.svar.dev"
+	},
+	"homepage": "https://svar.dev/svelte/tasklist/",
+	"dependencies": {
+		"wx-tasklist-locales": "2.0.1",
+		"wx-lib-data-provider": "1.6.0",
+		"wx-svelte-core": "2.0.1",
+		"wx-lib-dom": "0.7.1",
+		"wx-lib-state": "1.9.0"
+	},
+	"files": [
+		"src",
+		"readme.md",
+		"whatsnew.md",
+		"license.txt"
+	],
+	"keywords": [
+		"svelte",
+		"tasks",
+		"ui component",
+		"tasklist section"
+	]
+}
