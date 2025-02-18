@@ -1,11 +1,17 @@
-### 2.0.0
+## 2.1.0
+
+-   Using core@2.1.0
+
+## 2.0.0
 
 -   public release
 
-### 0.2.0
+## 0.2.0
 
--   [update] date format, data sync api
+### Updates
 
-### 0.1.0
+-   Date format, data sync api
+
+## 0.1.0
 
 -   initial version

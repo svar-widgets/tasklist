@@ -9,7 +9,7 @@ export const links = [
 	["/base/:skin", "Tasklist basic", BasicInit],
 	["/events/:skin", "Events", Events],
 	["/locales/:skin", "Locales", Locales],
-	["/backend-url/:skin", "Save to Backend", BackendUrl],
-	["/backend-custom/:skin", "Custom Backend", CustomBackend],
-	["/data-resolve/:skin", "Resolve and Fetch", BackendResolve],
+	["/backend-url/:skin", "Save to backend", BackendUrl],
+	["/backend-custom/:skin", "Custom backend", CustomBackend],
+	["/data-resolve/:skin", "Resolve and fetch", BackendResolve],
 ];
