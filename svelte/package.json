@@ -1,6 +1,6 @@
 {
 	"name": "wx-svelte-tasklist",
-	"version": "2.1.0",
+	"version": "2.1.1",
 	"description": "Simple Svelte component for adding a task list section on a page",
 	"productTag": "tasklist",
 	"productTrial": false,
@@ -32,9 +32,9 @@
 	},
 	"homepage": "https://svar.dev/svelte/core/",
 	"dependencies": {
-		"wx-tasklist-locales": "2.1.0",
+		"wx-tasklist-locales": "2.1.1",
 		"wx-lib-data-provider": "1.6.0",
-		"wx-svelte-core": "2.1.0",
+		"wx-svelte-core": "2.1.1",
 		"wx-lib-dom": "0.8.0",
 		"wx-lib-state": "1.9.0"
 	},
@@ -48,6 +48,11 @@
 		"svelte",
 		"tasks",
 		"ui component",
-		"tasklist section"
+		"tasklist section",
+		"task list",
+		"todo list",
+		"todo",
+		"task-list",
+		"todo-list"
 	]
 }

@@ -1,6 +1,6 @@
 {
 	"name": "wx-tasklist-locales",
-	"version": "2.1.0",
+	"version": "2.1.1",
 	"description": "Locales for WX Tasklist widget",
 	"type": "module",
 	"main": "index.js",

@@ -1,6 +1,6 @@
 <div align="center">
 
-# SVAR Svelte Tasklist
+# SVAR Svelte TaskList
 
 [![npm](https://img.shields.io/npm/v/wx-svelte-tasklist.svg)](https://www.npmjs.com/package/wx-svelte-tasklist)
 [![License](https://img.shields.io/github/license/svar-widgets/tasklist)](https://github.com/svar-widgets/tasklist/blob/main/license.txt)
@@ -14,7 +14,7 @@
 
 </div>
 
-A Svelte UI component for rendering editable list of tasks
+A Svelte UI component for creating an editable task list. Users can effortlessly add, edit, delete tasks, and mark them as completed.
 
 ### How to Use
 
