@@ -14,7 +14,13 @@
 
 </div>
 
-A Svelte UI component for creating an editable task list. Users can effortlessly add, edit, delete tasks, and mark them as completed.
+**SVAR Svelte Tasklist** is a lightweight and intuitive Svelte UI component for managing task lists or to-do lists. It allows users to add new tasks, edit existing ones, mark tasks as completed, and remove them.
+
+<div align="center">
+	
+<img src="https://svar.dev/images/github/github-tasklist.png" alt="SVAR Svelte TaskList" style="width: 700px;">
+
+</div>
 
 ### How to Use
 
