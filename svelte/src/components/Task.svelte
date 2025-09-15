@@ -1,7 +1,7 @@
 <script>
 	import { getContext } from "svelte";
-	import { Checkbox } from "wx-svelte-core";
-	import { clickOutside } from "wx-lib-dom";
+	import { Checkbox } from "@svar-ui/svelte-core";
+	import { clickOutside } from "@svar-ui/lib-dom";
 
 	let { task, edit, readonly, onupdate, onremove } = $props();
 

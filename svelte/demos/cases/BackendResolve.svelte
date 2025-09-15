@@ -1,7 +1,7 @@
 <script>
 	import { Tasklist } from "../../src/index";
-	import { Segmented } from "wx-svelte-core";
-	import { RestURL } from "wx-lib-data-provider";
+	import { Segmented } from "@svar-ui/svelte-core";
+	import { RestURL } from "@svar-ui/lib-data-provider";
 
 	const url = new RestURL(
 		"https://master--svar-tasklist-go--dev.webix.io/tasks"

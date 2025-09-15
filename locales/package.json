@@ -1,5 +1,5 @@
 {
-	"name": "wx-tasklist-locales",
+	"name": "@svar-ui/tasklist-locales",
 	"version": "2.2.1",
 	"description": "Locales for WX Tasklist widget",
 	"type": "module",

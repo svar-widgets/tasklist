@@ -1,6 +1,6 @@
 <script>
 	import { Tasklist } from "../../src/index";
-	import { RestURL } from "wx-lib-data-provider";
+	import { RestURL } from "@svar-ui/lib-data-provider";
 
 	const url = new RestURL(
 		"https://master--svar-tasklist-go--dev.webix.io/tasks/1"

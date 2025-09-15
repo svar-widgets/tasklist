@@ -1,7 +1,7 @@
 <script>
 	import Layout from "./Layout.svelte";
-	import { Locale } from "wx-svelte-core";
-	import { en } from "wx-tasklist-locales";
+	import { Locale } from "@svar-ui/svelte-core";
+	import { en } from "@svar-ui/tasklist-locales";
 
 	const { ondata, onchange, value, ...props } = $props();
 	const finalData = $derived(ondata && value ? ondata(value) : value);

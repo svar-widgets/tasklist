@@ -1,8 +1,8 @@
 <script>
 	import { getContext } from "svelte";
-	import { Button } from "wx-svelte-core";
-	import { delegateClick } from "wx-lib-dom";
-	import { tempID } from "wx-lib-state";
+	import { Button } from "@svar-ui/svelte-core";
+	import { delegateClick } from "@svar-ui/lib-dom";
+	import { tempID } from "@svar-ui/lib-state";
 	import Task from "./Task.svelte";
 
 	let { data: rawData, readonly = false, onchange } = $props();

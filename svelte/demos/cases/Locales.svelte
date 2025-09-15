@@ -1,10 +1,10 @@
 <script>
-	import { Locale, Segmented } from "wx-svelte-core";
+	import { Locale, Segmented } from "@svar-ui/svelte-core";
 	import { Tasklist } from "../../src/index";
 	import { getData } from "../data";
 
-	import { de, cn } from "wx-tasklist-locales";
-	import { de as deCore, cn as cnCore } from "wx-core-locales";
+	import { de, cn } from "@svar-ui/tasklist-locales";
+	import { de as deCore, cn as cnCore } from "@svar-ui/core-locales";
 
 	const { data } = getData();
 
