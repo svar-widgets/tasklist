@@ -20,9 +20,8 @@
 	</div>
 	<div class="tasks">
 		<Tasklist
-			{url}
 			value={id}
-			ondata={() => url.get(id)}
+			ondata={v => url.get(v)}
 			onchange={({ action, task, id, originalValue: v }) =>
 				url.path(v).save(action, task, id)}
 		/>

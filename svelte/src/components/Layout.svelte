@@ -15,14 +15,14 @@
 
 	function openEditor() {
 		edit = -1;
-		editTask = { id: -1, content: "", state: false };
+		editTask = { id: -1, content: "", status: 0 };
 	}
 
 	function add(content) {
 		const task = {
 			id: tempID(),
 			content,
-			state: false,
+			status: 0,
 		};
 
 		rawData = [...data, task];

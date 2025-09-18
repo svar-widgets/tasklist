@@ -2,9 +2,9 @@
 
 # SVAR Svelte TaskList
 
-[![npm](https://img.shields.io/npm/v/wx-svelte-tasklist.svg)](https://www.npmjs.com/package/wx-svelte-tasklist)
+[![npm](https://img.shields.io/npm/v/@svar-ui/svelte-tasklist.svg)](https://www.npmjs.com/package/@svar-ui/svelte-tasklist)
 [![License](https://img.shields.io/github/license/svar-widgets/tasklist)](https://github.com/svar-widgets/tasklist/blob/main/license.txt)
-[![npm downloads](https://img.shields.io/npm/dm/wx-svelte-tasklist.svg)](https://www.npmjs.com/package/wx-svelte-tasklist)
+[![npm downloads](https://img.shields.io/npm/dm/@svar-ui/svelte-tasklist.svg)](https://www.npmjs.com/package/@svar-ui/svelte-tasklist)
 
 </div>
 
@@ -28,7 +28,7 @@ To use the widget, simply import the package and include the component in your S
 
 ```svelte
 <script>
-	import { Tasklist } from "wx-svelte-tasklist";
+	import { Tasklist } from "@svar-ui/svelte-tasklist";
 
 	const value = [];
 </script>
