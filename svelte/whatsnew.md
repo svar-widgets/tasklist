@@ -1,3 +1,10 @@
+## 2.4.0
+
+### Fixes
+
+-   Checkbox is replaced by `plus` icon during editing
+-   The `onchange` event is issued after edit field was closed without actual changes
+
 ## 2.3.0
 
 ### New features

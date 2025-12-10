@@ -19,7 +19,7 @@
 <div class="toolbar">
 	<Segmented options={langs} bind:value={lang} />
 </div>
-<div style="margin: auto; max-width: 700px; margin-top: 40px;">
+<div style="margin: 20px; max-width: 700px; margin-top: 40px;">
 	{#if lang === "de"}
 		<Locale words={{ ...de, deCore }}>
 			<Tasklist value={data} />

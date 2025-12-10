@@ -1,5 +1,5 @@
 <script>
-	import { getContext } from "svelte";
+	import { getContext, setContext } from "svelte";
 	import { Button } from "@svar-ui/svelte-core";
 	import { delegateClick } from "@svar-ui/lib-dom";
 	import { tempID } from "@svar-ui/lib-state";
@@ -8,6 +8,9 @@
 	let { data: rawData, readonly = false, onchange } = $props();
 
 	const _ = getContext("wx-i18n").getGroup("tasklist");
+
+	//prevent associating Checkboxes with outer Field label
+	setContext("wx-input-id", null);
 
 	const data = $derived(rawData ?? []);
 	let edit = $state(null);
@@ -85,8 +88,13 @@
 				remove(task.id);
 			}
 		} else {
-			if (content) update(task.id, content, status);
-			else remove(task.id);
+			if (content) {
+				if (content !== task.content || status !== task.status) {
+					update(task.id, content, status);
+				}
+			} else {
+				remove(task.id);
+			}
 			edit = null;
 		}
 	}

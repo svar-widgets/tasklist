@@ -36,7 +36,7 @@
 		height: 40px;
 	}
 	.wrapper {
-		margin: 20px auto;
+		margin: 20px;
 		max-width: 768px;
 		height: 100%;
 	}

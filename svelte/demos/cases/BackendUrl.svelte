@@ -19,7 +19,7 @@
 
 <style>
 	.tasks {
-		margin: 20px auto;
+		margin: 20px;
 		max-width: 768px;
 		height: calc(100% - 56px);
 	}

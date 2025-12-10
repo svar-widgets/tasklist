@@ -50,7 +50,7 @@
 
 <div class="wx-task" class:wx-done={task.status}>
 	<div class="wx-checkbox-wrapper">
-		{#if edit === task.id}
+		{#if edit === task.id && task.id === -1}
 			<div class="wx-icon-add"><i class="wxi-plus"></i></div>
 		{:else}
 			<Checkbox onchange={handleStatus} value={task.status} />
@@ -76,6 +76,8 @@
 
 	<div class="wx-icon-close">
 		{#if !readonly && edit !== task.id}
+			<!-- svelte-ignore a11y_click_events_have_key_events -->
+			<!-- svelte-ignore a11y_no_static_element_interactions -->
 			<i class="wxi-close" onclick={() => onremove(task.id)}></i>
 		{/if}
 	</div>
