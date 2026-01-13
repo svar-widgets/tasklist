@@ -3,7 +3,7 @@
 	import { RestURL } from "@svar-ui/lib-data-provider";
 
 	const url = new RestURL(
-		"https://master--svar-tasklist-go--dev.webix.io/tasks/1"
+		"https://tasklist-backend.svar.dev/tasks/1"
 	);
 	let value = url.get();
 </script>
