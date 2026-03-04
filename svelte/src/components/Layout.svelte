@@ -1,7 +1,6 @@
 <script>
 	import { getContext, setContext } from "svelte";
 	import { Button } from "@svar-ui/svelte-core";
-	import { delegateClick } from "@svar-ui/lib-dom";
 	import { tempID } from "@svar-ui/lib-state";
 	import Task from "./Task.svelte";
 
@@ -76,6 +75,10 @@
 		remove(id);
 	}
 
+	function onedit(id) {
+		if (!readonly) edit = id;
+	}
+
 	function onupdate({ task, content, status, next }) {
 		if (task.id === -1) {
 			edit = null;
@@ -98,21 +101,15 @@
 			edit = null;
 		}
 	}
-
-	const bodyClickHandlers = {
-		dblclick: id => {
-			if (!readonly) edit = id;
-		},
-	};
 </script>
 
 <div class="wx-tasks-list">
-	<div class="wx-list" use:delegateClick={bodyClickHandlers}>
+	<div class="wx-list">
 		{#each data as task (task.id)}
-			<Task {task} {edit} {onupdate} {onremove} {readonly} />
+			<Task {task} {edit} {onupdate} {onremove} {onedit} {readonly} />
 		{/each}
 		{#if edit === -1}
-			<Task task={editTask} {edit} {onupdate} {onremove} />
+			<Task task={editTask} {edit} {onupdate} />
 		{/if}
 	</div>
 	{#if !readonly && edit !== -1}

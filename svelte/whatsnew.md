@@ -1,3 +1,9 @@
+## 2.4.1
+
+### Fixes
+
+-   Tasks cannot be edited on touch devices
+
 ## 2.4.0
 
 ### Fixes
@@ -19,11 +25,11 @@
 
 ## 2.2.0
 
--   Using core@2.2.0
+-   Using Svelte Core v2.2.0
 
 ## 2.1.0
 
--   Using core@2.1.0
+-   Using Svelte Core v2.1.0
 
 ## 2.0.0
 

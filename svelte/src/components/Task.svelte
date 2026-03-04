@@ -3,7 +3,7 @@
 	import { Checkbox } from "@svar-ui/svelte-core";
 	import { clickOutside } from "@svar-ui/lib-dom";
 
-	let { task, edit, readonly, onupdate, onremove } = $props();
+	let { task, edit, readonly, onupdate, onremove, onedit } = $props();
 
 	const _ = getContext("wx-i18n").getGroup("tasklist");
 
@@ -46,6 +46,10 @@
 			adjustHeight();
 		}
 	});
+
+	function handleEditClick() {
+		onedit(task.id);
+	}
 </script>
 
 <div class="wx-task" class:wx-done={task.status}>
@@ -68,9 +72,18 @@
 				oninput={handleContent}
 			></textarea>
 		{:else}
-			<div class="wx-text-wrapper" data-id={task.id}>
+			<!-- svelte-ignore a11y_no_static_element_interactions -->
+			<div class="wx-text-wrapper" ondblclick={() => onedit(task.id)}>
 				<span class="wx-text">{task.content}</span>
 			</div>
+		{/if}
+	</div>
+
+	<div class="wx-icon-edit">
+		{#if !readonly && edit !== task.id}
+			<!-- svelte-ignore a11y_click_events_have_key_events -->
+			<!-- svelte-ignore a11y_no_static_element_interactions -->
+			<i class="wxi-edit" onclick={handleEditClick}></i>
 		{/if}
 	</div>
 
@@ -172,6 +185,35 @@
 	.wx-icon-add {
 		font-size: var(--wx-checkbox-size);
 		color: var(--wx-color-font-alt);
+	}
+
+	.wx-icon-edit {
+		color: var(--wx-color-font-alt);
+		margin-left: 8px;
+		font-size: 20px;
+		height: 20px;
+		width: 20px;
+		opacity: 0;
+		transition: 0.3s linear;
+		display: none;
+	}
+
+	.wx-icon-edit .wxi-edit {
+		cursor: pointer;
+	}
+
+	.wx-icon-edit .wxi-edit:hover {
+		color: var(--wx-color-primary);
+	}
+
+	@media (hover: none) {
+		.wx-icon-edit {
+			display: block;
+		}
+
+		.wx-task:hover .wx-icon-edit {
+			opacity: 1;
+		}
 	}
 
 	.wx-icon-close {
