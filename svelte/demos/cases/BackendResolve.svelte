@@ -4,7 +4,7 @@
 	import { RestURL } from "@svar-ui/lib-data-provider";
 
 	const url = new RestURL(
-		"https://master--svar-tasklist-go--dev.webix.io/tasks"
+		"https://tasklist-backend.svar.dev/tasks"
 	);
 
 	let id = $state(1);
