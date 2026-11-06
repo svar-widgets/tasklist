@@ -17,7 +17,7 @@
 **SVAR Tasklist** is a lightweight and intuitive Svelte UI component for managing task lists or to-do lists. It allows users to add new tasks, edit existing ones, mark tasks as completed, and remove them. Light and dark skins are available.
 
 <div align="center">
-	
+
 <img src="https://svar.dev/images/github/github-tasklist.png" alt="SVAR Svelte TaskList" style="width: 700px;">
 
 </div>
@@ -40,18 +40,7 @@ To use the widget, simply import the package and include the component in your S
 
 Typically, you don't need to modify the code. However, if you wish to do so, follow these steps:
 
-1. Run `yarn` to install dependencies. Note that this project is a monorepo using `yarn` workspaces, so npm will not work
-2. Start the project in development mode with `yarn start`
-
-### Run Tests
-
-To run the test:
-
-1. Start the test examples with:
-    ```sh
-    yarn start:tests
-    ```
-2. In a separate console, run the end-to-end tests with:
-    ```sh
-    yarn test:cypress
-    ```
+1. Install [vite-plus](https://vite.plus) (`curl -fsSL https://vite.plus | bash` on Mac/Linux, `irm https://vite.plus/ps1 | iex` on Windows). The project uses `pnpm` workspaces under the hood, so plain `npm` will not work.
+2. Run `vp i` from the project root to install dependencies.
+3. Run `vp run build` to build all packages.
+4. Start the demo app in development mode with `vp run start`.
